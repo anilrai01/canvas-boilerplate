@@ -65,10 +65,9 @@ function Object(x,y,dx,dy,rad){
 // console.log('Draw');
 
 
-var ObjectArray = [];
+// var ObjectArray = [];
 
-var obj1 = new Object(100,100,5,5,30);
-
+// function init(){
 //Creating numbers of Objects
 // for(var i = 0; i < 100 ; i++){
 //     var x = 100;
@@ -79,12 +78,23 @@ var obj1 = new Object(100,100,5,5,30);
 
 //     ObjectArray.push(new Object(x,y,dx,dy,rad));
 // }
+// }
+
+// init();
+
+var obj1 = new Object(100,100,5,5,30);
+
+
 
 function animate(){
     requestAnimationFrame(animate);
     ctx.clearRect(0, 0, innerWidth, innerHeight);
 
     obj1.draw();
+
+    // for(var i = 0; i<ObjectArray.length; i++){
+    //     ObjectArray[i].draw();
+    // }
 
 }
 
